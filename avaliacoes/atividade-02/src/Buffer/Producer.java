@@ -1,0 +1,30 @@
+package Buffer;
+
+import java.util.*;
+
+public class Producer implements Runnable
+{
+   public Producer(Buffer b) {
+      buffer = b;
+   }
+   
+   public void run()
+   {
+   Date message;
+     
+      while (true) {
+         System.out.println("Producer napping");
+	 SleepUtilities.nap();
+   
+         // produce an item & enter it into the buffer
+         message = new Date();      
+         System.out.println("Producer produced " + message);
+         
+         System.out.println("Gabriel Maciel de Lima Lopes");
+           
+         buffer.insert(message);
+      }
+   }
+   
+   private  Buffer buffer;
+}
