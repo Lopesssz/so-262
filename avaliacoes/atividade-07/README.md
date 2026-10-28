@@ -1,4 +1,4 @@
-# Atividade 07
+
 # Atividade 07 — Algoritmo do Banqueiro
 
 **Aluno:** Gabriel Lopes  
